@@ -40,5 +40,5 @@ properties:
      vault: MONGO_SIDHARTH_PASSWORD
   AUTH_KEY: 
      vault: AUTH_KEY
-  REPLICATION: 5
+  REPLICATION: 3
   revision : 13
