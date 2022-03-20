@@ -1,7 +1,7 @@
 app:
   name: AppzMongoDB
   code: AMDB
-  notify: svengathattil@ecloudcontrol.com
+  notify: hshankar@ecloudcontrol.com
 
 build:
   version: 4.4
@@ -11,21 +11,25 @@ build:
   image_template: mongo-4.4
   
 deploy:
-  context: sidharth-v/DEV
+  context: alpha/DEV
   type: statefulset
   #ingress: none
-  replicas: 5
+  replicas: 3
   port:
   - 27017
   - 9216
 
 volumes:
 - claim: mongo-data
+  class: cstor-csi-disk
+  matchLabels: false
   mount: /appz/data
   name: mongo-data
   size: 5Gi
   mode: ReadWriteOnce
 - claim: mongo-key
+  class: cstor-csi-disk
+  matchLabels: false
   mount: /appz/keys
   name: mongo-key
   size: 1Gi
@@ -41,4 +45,4 @@ properties:
   AUTH_KEY: 
      vault: AUTH_KEY
   REPLICATION: 3
-  revision : 13
+  revision : 14
