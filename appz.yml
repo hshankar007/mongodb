@@ -18,6 +18,13 @@ deploy:
   port:
   - 27017
   - 9216
+  
+volumes:
+- claim: mongo-data
+  mount: /appz/data
+  name: mongo-data
+  size: 5Gi
+  mode: ReadWriteOnce
 
 
 properties:
