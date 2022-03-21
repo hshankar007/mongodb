@@ -22,7 +22,6 @@ deploy:
 volumes:
 - claim: mongo-data
   class: cstor-csi-disk
-  matchLabels: false
   mount: /appz/data
   name: mongo-data
   size: 5Gi
