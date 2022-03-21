@@ -29,7 +29,6 @@ volumes:
   mode: ReadWriteOnce
 
 
-  
 properties:
   DB_USER_ADMIN: admin
   DB_USER_ADMIN_PASSWORD:
@@ -39,4 +38,4 @@ properties:
   AUTH_KEY: 
      vault: AUTH_KEY
   REPLICATION: 3
-  revision : 17
+  revision : 18
