@@ -27,13 +27,7 @@ volumes:
   name: mongo-data
   size: 5Gi
   mode: ReadWriteOnce
-- claim: mongo-key
-  class: cstor-csi-disk
-  matchLabels: false
-  mount: /appz/keys
-  name: mongo-key
-  size: 1Gi
-  mode: ReadWriteOnce
+
 
   
 properties:
