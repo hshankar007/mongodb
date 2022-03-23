@@ -14,7 +14,7 @@ deploy:
   context: alpha/DEV
   type: statefulset
   #ingress: none
-  replicas: 3
+  replicas: 5
   port:
   - 27017
   - 9216
@@ -40,12 +40,7 @@ properties:
      vault: MONGO_SIDHARTH_PASSWORD
   AUTH_KEY: 
      vault: AUTH_KEY
-  REPLICATION: 3
-#  MONGO_PRIMARY: mongodb-4-4-0.mongodb-4-4:27017
-#  MONGO_SECONDARY_1: mongodb-4-4-1.mongodb-4-4:27017
-#  MONGO_SECONDARY_2: mongodb-4-4-2.mongodb-4-4:27017
-  #POSTGRES_04:
-  #POSTGRES_05:
+  REPLICATION: 5
 
   
   revision : 36
