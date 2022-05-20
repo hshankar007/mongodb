@@ -38,9 +38,9 @@ properties:
      vault: DB_USER_ADMIN_PASSWORD
   MONGO_SIDHARTH_PASSWORD:
      vault: MONGO_SIDHARTH_PASSWORD
-  AUTH_KEY: 
-     vault: AUTH_KEY
-  REPLICATION: 0
+  #AUTH_KEY: 
+  #   vault: AUTH_KEY
+  REPLICATION: 1
 
   
-  revision : 78
+  revision : 79
