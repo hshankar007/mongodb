@@ -41,7 +41,7 @@ properties:
   #AUTH_KEY: 
   #   vault: AUTH_KEY
   REPLICATION: 1
-  AUTH_ENABLE: 0
+  AUTH_ENABLE: 1
 
   
   revision : 89
