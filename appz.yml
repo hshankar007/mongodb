@@ -40,8 +40,8 @@ properties:
      vault: MONGO_SIDHARTH_PASSWORD
   #AUTH_KEY: 
   #   vault: AUTH_KEY
-  #REPLICATION: 
-  #AUTH_ENABLE: 1
+  REPLICATION: 0
+  AUTH_ENABLE: 0
 
   
   revision : 90
